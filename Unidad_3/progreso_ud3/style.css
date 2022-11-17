@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url(./Ubuntu-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #242333;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Ubuntu;
+}
+
+.asiento {
+    background-color: #444451;
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+}
+
+.asiento.seleccionado {
+    background-color: greenyellow;
+}
+
+.asiento:not(.ocupado):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.leyenda{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #777;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leyenda li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.leyenda li small{
+    margin-left: 5px;
+}
+
+.fila {
+    display: flex;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWEC - UD01 - Modificar el contenido del codigo HTML </title>
+</head>
+<body>
+    <h1> Modificando CSS </h1>
+    <p id="miTexto">Cadete de la MTF-Zeta9</p>
+    <button type="button" onclick="miEstilo();">Verificar si es sospechoso...</button>
+    <script>
+        function miEstilo() {
+            let miTexto = document.getElementById('miTexto');
+            miTexto.style.fontSize = "120px";
+            if(miTexto.textContent.match('Epsilon')){
+                miTexto.style.color = "red";
+                miTexto.style.backgroundColor = "blue";
+                document.getElementById('miTexto').innerHTML = 'El cadete es sospechoso';
+                console.log('Mensaje recibido, cadete culpable, ejecución aceptada');
+            } else {
+                miTexto.style.color = "green";
+                miTexto.style.backgroundColor = "white";
+                document.getElementById('miTexto').innerHTML = 'El cadete es inocente';
+                console.log('Mensaje recibido, cadete inocente, ejecución cancelada');
+            }
+            console.log('FIN COMUNICACIONES...');
+            //document.write("<h2>TEXTO NUEVO</h2>")
+
+            window.alert("JESSE, WE NEED TO COOK SOME METH");
+
+        }
+    </script>
+</body>
+</html>

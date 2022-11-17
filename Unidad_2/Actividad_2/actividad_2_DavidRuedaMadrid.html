@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Actividad 2 - David Rueda Madrid - DWEC </title>
+</head>
+<body>
+    <script>
+        const promptText = "Pon 4 numeros que sean diferentes";
+        let numero = prompt(promptText);
+        console.log("Numero inicial: " + numero);
+        function kaprekar(numero, pasos){
+            let arrNum = new Array();
+            let max, min;
+            for(i = 0; i < numero.length; i++){
+                arrNum[i] = numero.charAt(i);
+            }
+            //Ordenar array de mayor a menor
+            arrNum.sort();
+            //Guardar el numero en min
+            min = sumaNumeros(arrNum);
+            //Se guarda en el array el numero volteado
+            arrNum = numeroReverse(arrNum);
+            //Guardar el numero en max
+            max = sumaNumeros(arrNum);
+            //Conversion a numeros de max y min
+            max = parseInt(max);
+            min = parseInt(min);
+            //Se realiza la resta
+            numero = max - min;
+            //Incrementa los pasos
+            pasos++;
+            console.log(max + " - "+min+" = "+numero);
+            if(pasos > 7) {
+                console.log("Numero de pasos superado, abandone esta funcion...");
+                return;
+            }
+            //Si el numero obtenido es el 6174 (el de kaprekar)
+            if(numero === 6174){
+                console.log("Pasos realizados: "+pasos);
+                return;
+            }
+            //Uso de recursividad con el numero nuevo.
+            return kaprekar(numberKiller(numero.toString()), pasos);
+        }
+        //Une los digitos y los deja en una variable
+        function sumaNumeros(arrNum){
+            let cadena = "";
+            for(i = 0; i < arrNum.length; i++){
+                cadena += arrNum[i]
+            }
+            return cadena;
+        }
+        function numeroReverse(arrNum){
+            let arrAux = new Array(arrNum.length);
+            for (j = 0; j < arrNum.length; j++){
+                arrAux[arrNum.length - 1 - j] = arrNum[j]
+            }
+            return arrAux;
+        }
+        function numberKiller(numero){
+            if(numero.length ==  3){
+                numero = "0" + numero;
+            } else if(numero.length ==  2){
+                numero = "00" + numero;
+            } else if(numero.length ==  1){
+                numero = "000" + numero;
+            }
+            return numero;
+        }
+        kaprekar(numero, 0);
+    </script>
+</body>
+</html>

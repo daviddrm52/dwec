@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reglas</title>
+</head>
+<body>
+    <p id="myFPText">Texto a modificar</p>
+    <button id="myFPButton">Dame fuerte!</button>
+    <script>
+        function dale(){
+            var x = document.getElementById("myFPText");
+            x.innerHTML = "Me has matado!"
+        }
+        document.getElementById("myFPButton").addEventListener("click", dale, false);
+    </script>
+    <button onclick="this.innerHTML=Date()">Time to NUT</button>
+
+    <p id="sus"></p>
+
+    <script>
+        let fecha = new Date();
+        let fecha2 = new Date(444444);
+        let fecha3 = new Date(2022, 10, 4,16,03,20,44);
+
+        alert(fecha);
+        alert(fecha2);
+        alert(fecha3);
+    </script>
+</body>
+</html>

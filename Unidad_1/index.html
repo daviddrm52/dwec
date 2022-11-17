@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWEC - UD01 - Modificar el contenido del codigo HTML </title>
+    <!--<script>
+        function mensaje(){
+            alert("SCP-173 contained succesfully, contaiment unit November-12");
+        }
+    </script>-->
+    <script src="js/index.js"></script>
+</head>
+<body>
+    <h1> Modificando el codigo HTML </h1>
+    <p id="prueba">Modificando el contenido</p>
+    <button type="button" onclick="document.getElementById('prueba').innerHTML = 'Procediendo a matarle, por favor espere...'">Kill yourself, now</button>
+
+    <br>
+
+    <h1>Modificando imagenes</h1>
+    <img src="img/kda-kda-kaisa.gif" id="miImagen" onclick="cambiaImagen();" width="800">
+
+    <p>Haga clic sobre las letras para cambiarlas</p>
+
+    <script>
+        function cambiaImagen(){
+            let imagen = document.getElementById('miImagen');
+            if(imagen.src.match('kda')){
+                imagen.src = "img/flop-1.gif";
+            } else {
+                imagen.src = "img/kda-kda-kaisa.gif";
+            }
+        }
+    </script>
+    <noscript>
+        <p>POR FAVOR, ACTIVE JAVASCRIPT EN SUS AJUSTES</p>
+    </noscript>
+</body>
+</html>
