@@ -1,4 +1,5 @@
 let datos = [13, -5, -9, 0, 8, 2];
+let dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo"];
 
 //Funcion filter
 /*function natural(dato){
@@ -53,4 +54,8 @@ console.log("datos: "+datos)
 console.log("datos2: "+datos2);*/
 
 //Metodo sort() //Devuelve el array ordenado de menor a mayor
+datos.push(52);
+let datos2 = [100, 200, 300];
+datos.push(...datos2);
 console.log(datos.sort((a, b) => a - b));
+console.log(dias.sort((a, b) => a - b));
