@@ -54,8 +54,20 @@ console.log("datos: "+datos)
 console.log("datos2: "+datos2);*/
 
 //Metodo sort() //Devuelve el array ordenado de menor a mayor
-datos.push(52);
+/*datos.push(52);
 let datos2 = [100, 200, 300];
 datos.push(...datos2);
 console.log(datos.sort((a, b) => a - b));
-console.log(dias.sort((a, b) => a - b));
+console.log(dias.sort((a, b) => a - b));*/
+
+let text = "Boquepasa Requete 123";
+
+//console.log(text.slice(text.lastIndexOf(" "), text.length -1));
+//console.log(text.substring(2, 5));
+//console.log(text.replace("que", "muerete"));
+//console.log(text.toLocaleUpperCase());
+let prueba = ["sigue", "33", "Boeing 757-2AC(ER)"];
+//console.log(text.concat(...prueba));
+//console.log(text.split("e"));
+//console.log(text);
+//console.log(text.repeat(23));

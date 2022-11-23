@@ -14,22 +14,19 @@
         Para la ejecucion iniciada de setTimeout().
 */
 
-function inicio (){
     function cronoInicio() {
-        var horaActual = new Date();
-        let hora = '';
-        let minuto = '';
-        let segundo = '';
+        let hora = 00;
+        let minuto = 00;
+        let segundo = 00;
 
         segundo = segundo + 1;
     
-        let tiempoReal = document.getElementById('watch');
+        let tiempoReal = document.getElementById('reloj');
         tiempoReal.innerHTML = hora + ':' + minuto + ':' + segundo;
     }
-
     let inicioStopwatch;
     inicioStopwatch = setInterval(cronoInicio);
-}
+
 
 function final(){
     var horaActual = new Date();
