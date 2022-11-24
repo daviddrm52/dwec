@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #ffffff;
+}
+
+header{
+    text-decoration: none;
+    text-align: center;
+}
+
+#cronometro{
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    color: #ffffff;
+}
+
+#centro{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #6e3b6e;
+}
+
+#botones{
+    text-align: center;
+}
+
+button {
+    display: inline-block;
+    border: 2px solid transparent;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 20px;
+    font-family: Ubuntu;
+    cursor: pointer;
+    font-weight: bold;
+}

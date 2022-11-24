@@ -14,19 +14,11 @@
         Para la ejecucion iniciada de setTimeout().
 */
 
-function crono() {
+function relojUTC() {
     var miFecha = new Date();
-    let horas = miFecha.getHours();
-    let minutos = miFecha.getMinutes();
-    let segundos = miFecha.getSeconds();
-    let doceHoras = '';
-
-    if (horas > 12){
-        horas -= 12;
-        doceHoras = 'pm';
-    } else {
-        doceHoras = 'am';
-    }
+    let horas = miFecha.getUTCHours();
+    let minutos = miFecha.getUTCMinutes();
+    let segundos = miFecha.getUTCSeconds();
 
     if(horas < 10){horas = '0' + horas; }
     if(minutos < 10){minutos = '0' + minutos; }
@@ -34,13 +26,13 @@ function crono() {
     
     let texto = document.getElementById('hora');
 
-    texto.innerHTML = horas + ':' + minutos + ':' + segundos + '.' + doceHoras;
+    texto.innerHTML = horas + ':' + minutos + ':' + segundos;
 }
 
-let elCronometro;
+let elReloj;
 
 window.onload = function() {
-    elCronometro = setInterval(crono);
+    elReloj = setInterval(relojUTC);
 }
 
 //getHours() -> Metodo que extrae las horas del objeto Date();
