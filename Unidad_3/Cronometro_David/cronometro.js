@@ -12,7 +12,7 @@ function inicio(){
 function cronometro(){
     registros();
     id = setInterval(registros,1000);
-    document.querySelector(".inciar").removeEventListener("click",cronometro);
+    document.querySelector(".iniciar").removeEventListener("click",cronometro);
 }
 function registros(){
     var horasAuxiliares, minutosAuxiliares, segundosAuxiliares;
