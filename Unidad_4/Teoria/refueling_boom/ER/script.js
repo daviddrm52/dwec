@@ -15,7 +15,7 @@ let cadena ="Hola crack dwec fiera mastodonte tifon numero 1";
 //patron = /a+/g;
 
 cadena = "cada 100 o cada 1000 veces";
-patron = /\d{2,3}/g;
+patron = /\d{3}/g;
 
 let resultado = cadena.match(patron);
 
