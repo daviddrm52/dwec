@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - Examen T1 - David Rueda Madrid</title>
+</head>
+<body>
+    <h1>1. Crear un hola mundo que salude desde los logs de la consola usando: </h1>
+
+    <!--Secciones para cada metodo de integración-->
+    <section>
+        <h2 id="textoMod1">Texto sin modificar 1</h2>
+    </section>
+    <section>
+        <h1 id="textoMod2">Texto sin modificar 2</h1>
+    </section>
+    <section>
+        <h1 id="textoMod3" onclick="document.getElementById('textoMod3').innerHTML = 'Y el tercer texto se desvela al haber pulsado sobre el tercer texto sin modificar';">Texto sin modificar 3, pulsame...</h1>
+    </section>
+
+    <!--Primer metodo de integración-->
+    <script>
+        function Integracion1() {
+            //Metodo 1 de integración de codigo
+            console.log("Hola Mundo");
+
+            //Saludando por ventana emergente
+            alert("Hola Mundo");
+
+            //Modificando el texto
+            document.getElementById('textoMod1').innerHTML = 'Soy un texto que se te ha colado en tu codigo ^-^'; 
+        }
+
+        Integracion1();
+    </script>
+
+    <!--Segundo metodo de integración-->
+    <script src="./Ejercicio_1_DavidRuedaMadrid.js"></script>
+
+    <!--Mensaje en caso de que este deshabilitado JavaScript-->
+    <noscript>
+        <h1>Usted tiene deshabilitado JavaScript, por favor, activelo...</h1>
+    </noscript>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3 - Examen T1 - David Rueda Madrid</title>
+</head>
+<body>
+    <h1>3. Crea un programa que cree y muestre un listado con las letras del abecedario español exceptuando la ñ y la ç.</h1>
+    <h2>La lista se tendra que repetir dos veces, saliendo primero "1 - A" y por ultimo "52 - AZ"</h2>
+
+    <script>
+        let letrasA = "a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z";
+        let letrasB = letrasA.split(",");
+
+        for(i=0; i<letrasB.length; i++){
+            console.log((i+1) + " - " +letrasB[i].trim());
+        }
+
+        for(j=0; j<letrasB.length; j++){
+            console.log((j+1+26) + " - " +letrasB[j].trim());
+        }
+    </script>
+</body>
+</html>

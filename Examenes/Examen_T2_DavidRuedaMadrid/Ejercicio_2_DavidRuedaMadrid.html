@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 - Examen T1 - David Rueda Madrid</title>
+</head>
+<body>
+    <h1>2. Crear un control parental para que no podamos acceder a la pagina.</h1>
+
+    <!--Seccion para poder mostrar el nombre y el apellido-->
+    <section>
+        <h2>Nombre secreto: </h2><p id="nomSec">****</p>
+        <h2>Apellido secreto: </h2><p id="apeSec">****</p>
+        <h2 id="mensajeSecreto">Preparing mimetic kill agent, please wait...</h2>
+    </section>
+
+    <!--Script para poder realizar las verificaciones-->
+    <script>
+        function combinacionSecreta(){
+            //Variables con los parametros secretos
+            let nombreSecreto = 'Leona';
+            let apellidoSecreto = 'Solari';
+            let mensajeOculto = "Bienvenida Dra. Solari, las pruebas con el SCP-173 estan a la espera en Site-02..."
+            let preguntaNombre;
+            let preguntaApellido;
+        
+            //Condicion para verificar el nombre usando un bucle doWhile
+            do {
+                preguntaNombre = prompt("Introduzca el nombre secreto...");
+                if(preguntaNombre === nombreSecreto){
+                    alert("Nombre secreto correcto");
+                    document.getElementById('nomSec').innerHTML = nombreSecreto;
+                    //Todo correcto, nos deja continuar
+                } else {
+                    alert("Nombre secreto incorrecto, pruebe de nuevo...");
+                }
+            } while(preguntaNombre!=nombreSecreto);
+
+            //Condicion para verificar el apellido usando un bucle doWhile
+            do{
+                preguntaApellido = prompt("Introduzca el apellido secreto...");
+                if(preguntaApellido === apellidoSecreto){
+                    alert("Apellido secreto correcto");
+                    document.getElementById('apeSec').innerHTML = apellidoSecreto;
+                    //Todo correcto, nos deja continuar
+                } else {
+                    alert("Apellido secreto incorrecto, pruebe de nuevo...");
+                }
+            } while(preguntaApellido!=apellidoSecreto);
+
+            //Si coinciden el nombre y el apellido, nos revelará el mensaje secreto
+            if (preguntaNombre===nombreSecreto && preguntaApellido===apellidoSecreto){
+                document.getElementById('mensajeSecreto').innerHTML = mensajeOculto;
+            }
+        }
+
+        combinacionSecreta();
+    </script>
+</body>
+</html>

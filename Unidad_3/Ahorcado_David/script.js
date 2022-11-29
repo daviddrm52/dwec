@@ -26,3 +26,12 @@
 }
 
 Ahorcado();*/
+
+/*
+AHORCADO, que debe contener
+
+1 reloj cuenta toda la partida
+1 reloj cada 10 segundos te resta un intento si no haces nada
+guardar records usando LocalStorage: llave que sera la palabra, tiempo que ha llevado resolverlo, y numero de fallos (tiene que estar guardado como record de errores)
+
+*/
