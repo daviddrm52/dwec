@@ -4,17 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Ahorcado</title>
 </head>
 <body>
     <header>
-        <h1>Bienvenido al ahorcado</h1>
+        <div class="centrado">
+            <h1>Bienvenido al ahorcado</h1>
+        </div>
     </header>
     <main>
-        <script src="./script.js"></script>
+        <div>
+            <h3>Adivina la palabra</h3>
+            <input type="text" value="" placeholder="Introduzca una palabra...">
+            <div>
+                <button id="btn-revision">Ver si esta correcto</button>
+            </div>
+        </div>
+        <div>
+            <div class="palabraSecreta"> Espacio en blanco esperando lista de palabras </div>
+        </div>
+        <br>
+        <div>
+            <div class="intentosRestantes"> Intentos restantes: N/A </div>
+        </div>
+        <br>
+        <div>
+            <h4>Letras fallidas</h4>
+            <div class="letrasFalladas"> Esperando letras... </div>
+        
+        </div>
+        <br>
+        <div>
+            <h4>Tiempo de la partida</h4>
+            <div class="tiempoPartida">00:00:00</div>
+        </div>
     </main>
     <footer>
-
+        <div class="centrado">
+            <p><b>Esto es un footer, no tiene nada especial</b></p>
+        </div>
     </footer>
+<script src="./script.js"></script>
 </body>
 </html>

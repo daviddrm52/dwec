@@ -1,4 +1,4 @@
-function Ahorcado() {
+/*function Ahorcado() {
     let intentos = 5;
     let mensajeInicial;
     let palabras = [
@@ -25,4 +25,4 @@ function Ahorcado() {
     } while(intentos >= 1 || mensajeInicial===aleatoria);
 }
 
-Ahorcado();
+Ahorcado();*/
