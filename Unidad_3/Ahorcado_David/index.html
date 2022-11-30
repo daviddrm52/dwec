@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="centrado">
-            <h1>Bienvenido al ahorcado</h1>
+            <h1>Bienvenido al ahorcado <span id="nombreUsuario"></span></h1>
         </div>
     </header>
     <main>
@@ -26,23 +26,29 @@
         </div>
         <br>
         <div>
-            <div class="intentosRestantes"> Intentos restantes: N/A </div>
+            <div> Intentos restantes: <b id="intentosRestantes"></b></div>
         </div>
         <br>
         <div>
             <h4>Letras fallidas</h4>
-            <div class="letrasFalladas"> Esperando letras... </div>
+            <div id="letrasFalladas"> Esperando letras... </div>
         
         </div>
         <br>
         <div>
             <h4>Tiempo de la partida</h4>
-            <div class="tiempoPartida">00:00:00</div>
+            <div id="tiempoPartida">00:00:00</div>
+            <div id="mensaje"></div>
+        </div>
+        <br>
+        <div>
+            <h4>La palabra correcta era:</h4>
+            <div id="aleatoria"></div>
         </div>
     </main>
     <footer>
         <div class="centrado">
-            <p><b>Esto es un footer, no tiene nada especial</b></p>
+            <p><b>Pagina creada por David Rueda Madrid</b></p>
         </div>
     </footer>
 <script src="./script.js"></script>
