@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travesias - Asociación de Amigos del Futbol</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Esta es nuestra principal cabecera que se utiliza en todas nuestras paginas de nuestro sitio web. -->
+    <header>
+      <h1>Asociación de Amigos del Futbol</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="./index.html"><b>Inicio</b></a></li>
+        <li><a href="./html/transcurso.html"><b>Transcurso</b></a></li>
+        <li><a href="./html/jornada.html"><b>Jornada</b></a></li>
+        <li><a href="./html/contacto.html"><b>Contacto</b></a></li>
+      </ul>
+      <!-- Un formulario de busqueda es otra manera no lineal de navegar a traves de una pagina web. -->
+      <form>
+        <input type="search" name="q" placeholder="Buscas algo..." />
+        <input type="submit" value="Buscar"/>
+      </form>
+    </nav>
+    <!-- Este es el contenido principal de nuestra pagina -->
+    <main>
+        <article>
+            <div>
+                <h2>Primera División Masculina</h2>
+                <h3> 18:00h <span id="jornadaMasculinaLocal"></span> - <span id="jornadaMasculinaVisitante"></span> </h3>
+            </div>
+            <div>
+                <h2>Primera División Femenina</h2>
+                <h3> 20:00h <span id="jornadaFemeninaLocal"></span> - <span id="jornadaFemeninaVisitante"></span> </h3>
+            </div>
+        </article>
+      <!-- El contingut de "aside" es pot imbricar dins del contingut principal
+        (també pot estar fora) -->
+      <aside>
+        <h2>Herramientas</h2>
+        <ul>
+          <li><a href="./travesses.html">Generación de jornadas</a></li>
+          <li><a href="#">Herramienta 2</a></li>
+          <li><a href="#">Herramienta 3</a></li>
+          <li><a href="#">Herramienta 4</a></li>
+          <li><a href="#">Herramienta 5</a></li>
+        </ul>
+      </aside>
+    </main>
+    <footer>
+      <p>Asosiación de Amigos de Futbol</p>
+      <p>Desarrollo Web en Entorno Cliente | DAWB | Año 2022/2023</p>
+    </footer>
+    <script src="./scripts/travesses.js"></script>
+  </body>
+</html>
