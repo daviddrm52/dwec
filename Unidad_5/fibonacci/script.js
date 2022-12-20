@@ -32,3 +32,5 @@ botones[1].addEventListener("click", ()=> {
     console.log("b2");
     stopWebWorker();
 }, false);
+
+//Comprobación en equipo local
