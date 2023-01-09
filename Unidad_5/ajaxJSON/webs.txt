@@ -1,0 +1,14 @@
+[
+    {
+        "display":"Air Chiquin",
+        "url":"https://www.airchiquin.com/"
+    },
+    {
+        "display":"Vueling Airlines",
+        "url":"https://www.vueling.com/es/"
+    },
+    {
+        "display":"Delta Airlines",
+        "url":"https://es.delta.com/eu/es"
+    },
+]

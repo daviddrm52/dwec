@@ -1,0 +1,18 @@
+{
+    "persona":[{
+        "nombre": "Jesus",
+        "ciudad": "Cadiz"
+    }, {
+        "nombre": "Aaron",
+        "ciudad": "Madrid"
+    }],
+    "avion":[{
+        "registro": "EC-NAX",
+        "aerolinea": "Vueling Airlines",
+        "modelo": "Airbus A320-271N"
+    }, {
+        "registro": "CHN852AC",
+        "aerolinea": "Air Chiquin Prestige",
+        "modelo": "CHJ 100-50"
+    }]
+}
