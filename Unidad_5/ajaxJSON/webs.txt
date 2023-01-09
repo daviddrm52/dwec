@@ -10,5 +10,5 @@
     {
         "display":"Delta Airlines",
         "url":"https://es.delta.com/eu/es"
-    },
+    }
 ]
