@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './NavBar';
+import Home from './Home';
 
 function App() {
+  /* 
+  const titulo = "Bienvenidos al Blog de DWEC";
+  var links = ["https://www.youtube.com/watch?v=-zqDzCT41l0",
+                "https://www.google.com/?safe=active&ssui=on",
+                "https://en.scpslgame.com/index.php?title=Main_Page",
+                "https://www.jetphotos.com/photo/10834173"]; */
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+      <Home/>
+      <div className="contenido">
+        <h1>App Component</h1>
+      </div>
+      {/* <ul>
+        {
+          links.map((value, index) => {
+            return <li key={ index }>{ index+1 } - <a href={ value }>{value}</a></li>
+          })
+        }
+      </ul> */}
+
     </div>
   );
 }
