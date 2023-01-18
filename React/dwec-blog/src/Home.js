@@ -1,25 +1,36 @@
+import {useState} from "react";
+
 const Home = () => {
 
-    const handleClick = () => {
-        console.log("WARNING: UNAUTHORIZED ACCESS DETECTED, RELEASING MEMETIC KILL AGENT");
-    }
+    const [blogs, setBlogs] = useState([
+        {titulo: 'Mi nueva web LowEffortGaming', body: "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHHH", autor: "Fimosis", id: 1 },
+        {titulo: 'Zona de recogida de basuras', body: "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE", autor: "Huberto", id: 2 },
+        {titulo: 'Los moyai de las Islas de Pascua', body: "MOOOOOOOOOOOOOOAAAAAAAAAAAAAIIIIIIIII", autor: "Kesante", id: 3 },
+    ]);
 
-    const handleClickAgain = () => {
-        const nombre = ["David", "Aaron", "Jesus", "Adrian", "Miquel"];
-        const nombreRandom = nombre[Math.floor(Math.random() * nombre.length)];
-        //document.getElementsById("nombres").innerHTML=nombreRandom;
-        console.log(nombreRandom);
+    //Jitterclick de mierda low effort
+    const [click, setJitter] = useState(0);
+    const handleJitter = () => {
+        setJitter(click+1);
     }
-
 
     return ( 
         <div className="home">
-            <h2>Pagina de Inicio</h2>
-            <h4>¡Bienvenido!</h4>
-            <button onClick={handleClick}>Activar botón</button>
-            <button onClick={handleClickAgain}>Activar botón otra vez</button>
-            <div id="nombres">
+            <h1>Pagina de Inicio</h1>
+            <h1>¡Bienvenido!</h1>
 
+            <h2>Blogs disponbles</h2>
+            { blogs.map((blog) => (
+                <div className="blogPreview" key={blog.id}>
+                    <h3>{ blog.titulo} </h3>
+                    <p> Escrito por { blog.autor} </p>
+                </div>
+            ))}
+
+            <br />
+            <div title="Low effort jitterclick">
+                <p> Has realizado { click } clicks </p>
+                <button onClick={handleJitter}><b>click</b></button>
             </div>
         </div>
      );
