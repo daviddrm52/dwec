@@ -1,10 +1,12 @@
 const NavBar = () => {
     return ( 
-        <nav className="navbar">
-            <h1>El blog de DWEC</h1>
-            <div className="links">
-                <a href="/">Home</a>
-                <a href="/crear" style={miEstilo}>Nuevo Blog</a>
+        <nav>
+            <div className="navbar">
+                <h1>El blog de DWEC</h1>
+                <div className="links">
+                    <a href="/">Home</a>
+                    <a href="/crear" style={miEstilo}>Nuevo Blog</a>
+                </div>
             </div>
         </nav>
      );
