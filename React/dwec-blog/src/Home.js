@@ -13,8 +13,7 @@ const Home = () => {
     ]);*/}
 
     const [blogs, setBlogs] = useState(null);
-
-    const [nombre, setNombre] = useState('Antonio');
+    const [cargando, setCargando] = useState(true);
 
     const handleEliminarBlog = (id) => {
         const blogsAux = blogs.filter(b => b.id != id);
@@ -22,14 +21,25 @@ const Home = () => {
     }
 
     useEffect(() => {
-        console.log('useEffect disparado');
-        fetch('http://localhost:8000/blogs')
-        .then(res => {
-            res.json();
-        })
-        .then(data => {
-            console.log(data);
-        })
+        setTimeout(() => {
+            console.log('useEffect disparado');
+            fetch('http://localhost:8000/blogs')
+            .then(res => {
+                console.log(res);
+                if (!res.ok) {
+                    throw Error('No se ha podido recuperar la información.');
+                }
+                return res.json();
+            })
+            .then(data => {
+                //console.log(data);
+                setBlogs(data);
+                setCargando(false);
+            })
+            .catch(err => {
+                console.log("Network error: "+err.message);
+            })
+        }, 3000);
     }, []);
 
 
@@ -41,9 +51,8 @@ const Home = () => {
 
     return ( 
         <div className="home">
-            {/* <ListaBlogs blogs={ blogs } titulo="Listado completo de blogs" handleEliminarBlog={handleEliminarBlog}/>
-            <button onClick={() => setNombre('Huberto')}> Cambia nombre </button>
-            <p> {nombre} </p> */}
+            { cargando && <div>Cargando...</div> }
+            { blogs && <ListaBlogs blogs={ blogs } titulo="Listado completo de blogs" handleEliminarBlog={handleEliminarBlog}/> }
             
             <div className="jitter" title="Low effort jitterclick">
                 <h3>Prueba del ratón</h3>
