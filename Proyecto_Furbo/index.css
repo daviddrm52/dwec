@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Ubuntu;
+}
+
+header{
+    padding: 25px;
+    text-align: center;
+    background-color: #c31212;
+    color: #ffffff;
+}
+
+nav {
+    background-color: #dd7200;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ 
+nav form {
+    float: right;
+}
+
+nav form input {
+    padding: 14px 16px;
+    margin: 10px;
+    border: transparent;  
+}
+
+nav li {
+    float: left;
+}
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    margin: 10px;
+    text-decoration: none;
+}
+  
+/* Change the link color to #111 (black) on hover */
+nav li a:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+aside {
+    color: white;
+    float: right;
+    padding: 20px;
+    margin: 20px;
+    background-color: #927fdb;
+}
+
+aside ul{
+    list-style-type: none;
+    padding: 10px;
+}
+
+aside li {
+    padding: 10px;
+}
+
+body {
+    background-color: #eaceea;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff
+}
+
+article{
+    background-color: #ffffff;
+    margin: 20px;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px 5px gray;
+    display: inline-block;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer{
+    padding: 25px;
+    text-align: center;
+    background-color: #3512c3;
+    color: #ffffff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
