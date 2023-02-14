@@ -20,8 +20,6 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
-    margin-left: 20px;
-    margin-right: 20px;
     padding: 0;
     overflow: hidden;
 }
@@ -55,55 +53,26 @@ nav li a:hover {
     color: #000000;
 }
 
-/* Addon */
-.addon {
-    background-color: #927fdb;
-}
-
-.addon ul {
-    list-style-type: none;
-    margin: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 0;
-    overflow: hidden;
-}
-
-.addon div {
-    float: left;
-}
-
-.addon li {
-    float: right;
-}
-  
-.addon li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    margin: 10px;
-    text-decoration: none;
-}
-
-.addon li h3 {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    margin: 10px;
-    text-decoration: none;
-}
-  
-/* Change the link color to #111 (black) on hover */
-.addon li a:hover {
-    background-color: #ffffff;
-    color: #000000;
-}
-
 .active {
     background-color: #ffffff;
     color: #000000;
+}
+
+aside {
+    color: white;
+    float: right;
+    padding: 20px;
+    margin: 20px;
+    background-color: #927fdb;
+}
+
+aside ul{
+    list-style-type: none;
+    padding: 10px;
+}
+
+aside li {
+    padding: 10px;
 }
 
 body {
@@ -115,15 +84,10 @@ a {
     color: #ffffff
 }
 
-.articulos{
-    margin: 0px auto;
-    width: 50%;
-}
-
 article{
     background-color: #ffffff;
     margin: 20px;
-    width: 100%;
+    width: 60%;
     padding: 20px;
     text-align: center;
     border-radius: 25px;
@@ -132,12 +96,8 @@ article{
 }
 
 img {
-    width: 75%;
+    width: 100%;
     border-radius: 10px;
-}
-
-.push {
-    height: 100px;
 }
 
 footer{
