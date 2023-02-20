@@ -13,6 +13,10 @@ header{
     color: #ffffff;
 }
 
+.imgHeader{
+    width: 5%;
+}
+
 nav {
     background-color: #dd7200;
 }
@@ -20,6 +24,8 @@ nav {
 nav ul {
     list-style-type: none;
     margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
     padding: 0;
     overflow: hidden;
 }
@@ -47,7 +53,6 @@ nav li a {
     text-decoration: none;
 }
   
-/* Change the link color to #111 (black) on hover */
 nav li a:hover {
     background-color: #ffffff;
     color: #000000;
@@ -56,23 +61,6 @@ nav li a:hover {
 .active {
     background-color: #ffffff;
     color: #000000;
-}
-
-aside {
-    color: white;
-    float: right;
-    padding: 20px;
-    margin: 20px;
-    background-color: #927fdb;
-}
-
-aside ul{
-    list-style-type: none;
-    padding: 10px;
-}
-
-aside li {
-    padding: 10px;
 }
 
 body {
@@ -84,20 +72,38 @@ a {
     color: #ffffff
 }
 
-article{
-    background-color: #ffffff;
-    margin: 20px;
-    width: 60%;
-    padding: 20px;
+.articulos{
+    margin: 0px auto;
+    width: 100%;
+    padding: 0px;
     text-align: center;
-    border-radius: 25px;
+}
+
+.individual{
+    background-color: #fff;
+    margin: 15px auto;
+    width: 75%;
+    padding: 15px;
+    text-align: center;
+    border-radius: 50px;
     box-shadow: 5px 5px 5px gray;
-    display: inline-block;
+}
+
+.individual button {
+    background-color: #3512c3;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+
 }
 
 img {
-    width: 100%;
+    width: 300px;
     border-radius: 10px;
+}
+
+.push {
+    height: 100px;
 }
 
 footer{
@@ -109,4 +115,3 @@ footer{
     bottom: 0;
     width: 100%;
 }
-
