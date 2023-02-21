@@ -136,21 +136,15 @@ a {
     box-shadow: 5px 5px 5px gray;
 }
 
-.individual a {
+.individual button {
     background-color: #3512c3;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
 }
 
-#partidosMasculinos li{
-    list-style-type: none;
-    padding: 2px;
-}
-
-#partidosFemeninos li{
-    list-style-type: none;
-    padding: 2px;
+#listaPartidos h3{
+    padding: 5px;
 }
 
 img {

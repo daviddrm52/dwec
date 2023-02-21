@@ -53,54 +53,7 @@ nav li a {
     text-decoration: none;
 }
   
-/* Change the link color to #111 (black) on hover */
 nav li a:hover {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-/* Addon */
-.addon {
-    background-color: #927fdb;
-}
-
-.addon ul {
-    list-style-type: none;
-    margin: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 0;
-    overflow: hidden;
-}
-
-.addon div {
-    float: left;
-}
-
-.addon li {
-    float: right;
-}
-  
-.addon li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    margin: 10px;
-    text-decoration: none;
-}
-
-.addon li h3 {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    margin: 10px;
-    text-decoration: none;
-}
-  
-/* Change the link color to #111 (black) on hover */
-.addon li a:hover {
     background-color: #ffffff;
     color: #000000;
 }
@@ -116,7 +69,12 @@ body {
 
 a {
     text-decoration: none;
-    color: #ffffff
+    color: #ffffff;
+}
+
+.contacto p a {
+    text-decoration: none;
+    color: #000000;
 }
 
 .articulos{
@@ -136,30 +94,29 @@ a {
     box-shadow: 5px 5px 5px gray;
 }
 
-.individual a {
+.individual button {
     background-color: #3512c3;
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
-}
 
-#partidosMasculinos li{
-    list-style-type: none;
-    padding: 2px;
-}
-
-#partidosFemeninos li{
-    list-style-type: none;
-    padding: 2px;
 }
 
 img {
-    width: 300px;
+    width: 600px;
     border-radius: 10px;
 }
 
 .push {
     height: 100px;
+}
+
+.contacto{
+    padding: 10px;
+}
+
+.escondido{
+    color: #ffffff;
 }
 
 footer{
