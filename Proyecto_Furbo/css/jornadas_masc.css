@@ -144,7 +144,13 @@ a {
 }
 
 #listaPartidos h3{
-    padding: 5px;
+    padding: 15px;
+    background-color: #bcb7d1;
+    border-radius: 10px;
+}
+
+.jornadas{
+    padding: 10px;
 }
 
 img {
@@ -152,16 +158,11 @@ img {
     border-radius: 10px;
 }
 
-.push {
-    height: 100px;
-}
-
 footer{
     padding: 25px;
     text-align: center;
     background-color: #3512c3;
     color: #ffffff;
-    position: fixed;
+    position: relative;
     bottom: 0;
-    width: 100%;
 }
