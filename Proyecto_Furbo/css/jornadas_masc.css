@@ -149,6 +149,13 @@ a {
     border-radius: 10px;
 }
 
+.individual a {
+    background-color: #3512c3;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
 .jornadas{
     padding: 10px;
 }

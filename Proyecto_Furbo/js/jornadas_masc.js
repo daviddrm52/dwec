@@ -1,5 +1,7 @@
 let primeraMasc = ["Almería", "Athletic Club", "Atlético de Madrid", "FC Barcelona", "Real Betis", "Cádiz", "Celta de Vigo", "Elche", "Espanyol", "Getafe", "Girona", "Real Mallorca", "Osasuna", "Rayo Vallecano", "Real Madrid", "Real Sociedad", "Sevilla", "Valencia", "Valladolid", "Villarreal"];    
 
+let partidosRandomizados = [];
+
 var listaPartidos = document.getElementById("listaPartidos");
 
 for (let i = 0; i < 10; i++) {
