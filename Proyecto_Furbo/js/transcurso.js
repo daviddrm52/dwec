@@ -5,7 +5,8 @@ var partMasc = document.getElementById("partidosMasculinos");
 partMasc.innerHTML = "";
   
 for (let i = 0; i < primeraMasc.length; i++) {
-    partMasc.innerHTML += "<li><span>"+primeraMasc[i]+"</span></li>";
+    partMasc.innerHTML += "<tr><td><b>"+primeraMasc[i]+"</b></td></tr>";
+
 }
 
 
@@ -16,5 +17,5 @@ var partFem = document.getElementById("partidosFemeninos");
 partFem.innerHTML = "";
 
 for (let i = 0; i < segundaFem.length; i++) {
-    partFem.innerHTML += "<li><span>"+segundaFem[i]+"</span></li>";
+    partFem.innerHTML += "<tr><td><b>"+segundaFem[i]+"</b></td></tr>";
 }

@@ -14,7 +14,7 @@ header{
 }
 
 .imgHeader{
-    width: 5%;
+    width: 50px;
 }
 
 nav {
@@ -37,7 +37,12 @@ nav form {
 nav form input {
     padding: 14px 16px;
     margin: 10px;
+    border-radius: 10px;
     border: transparent;  
+}
+
+nav form input[type="submit"]{
+    cursor: pointer;
 }
 
 nav li {
@@ -141,10 +146,32 @@ a {
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
+    border: transparent;
+    color: #ffffff;
+    cursor: pointer;
 }
 
-#listaPartidos h3{
-    padding: 5px;
+.individual button:disabled{
+    background-color: #808080;
+    cursor: not-allowed;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    background-color: transparent;
+    padding: 20px;
+}
+
+thead th{
+    padding: 10px;  
+    color: #fff;
+    background-color: #3512c3;
+}
+tbody tr td{
+    padding: 10px;
+    background-color: #eaceea;
 }
 
 img {
@@ -154,6 +181,10 @@ img {
 
 .push {
     height: 100px;
+}
+
+.item{
+    padding: 10px;
 }
 
 footer{

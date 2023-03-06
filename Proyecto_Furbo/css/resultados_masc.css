@@ -14,7 +14,7 @@ header{
 }
 
 .imgHeader{
-    width: 5%;
+    width: 50px;
 }
 
 nav {
@@ -37,9 +37,13 @@ nav form {
 nav form input {
     padding: 14px 16px;
     margin: 10px;
+    border-radius: 10px;
     border: transparent;  
 }
 
+nav form input[type="submit"]{
+    cursor: pointer;
+}
 nav li {
     float: left;
 }
@@ -146,7 +150,7 @@ a {
 table{
     margin-left: auto;
     margin-right: auto;
-    width: 500px;
+    width: 600px;
     background-color: #ab9fdc;
     padding: 20px;
 }

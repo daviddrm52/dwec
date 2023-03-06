@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/jornadas_fem.css">
-    <link rel="shortcut icon" href="./../img/ISeeYou.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./../img/sports_soccer_FILL0_wght400_GRAD0_opsz48.png" type="image/x-icon">
     <title>Jornadas Femeninas - Asosiación de Amigos del Futbol</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
             <li><a href="./transcurso.html"><b>Transcurso</b></a></li>
             <li><a href="./jornada.html"><b>Jornada</b></a></li>
             <li><a href="./contacto.html"><b>Contacto</b></a></li>
-            <form>
+            <form action="./buscar.html">
                 <input type="search" name="q" placeholder="Buscas algo..." />
                 <input type="submit" value="Buscar"/>
               </form>
@@ -38,10 +38,23 @@
         <div class="articulos">
             <div class="individual">
                 <h2>Proximos partidos</h2>
-                <div id="listaPartidos"> </div>
-                <div>
-                    <h2> Quiniela para los proximos partidos </h2>
-                    <button><a href="./resultados_fem.html"> Generación de Quiniela de Primera División Femenina</a></button>
+                <p>Puede rellenar la quiniela para poder ver que resultados habran de los partidos programados.</p>
+                <table>
+                    <thead>
+                        <th>Jornada</th>
+                        <th>Partido</th>
+                        <th>Quiniela</th>
+                        <th>Resultado</th>
+                    </thead>
+                    <tbody id="partidosQuiniela"></tbody>
+                </table>
+                <div class="item">
+                    <h3>Si ha terminado de rellenar la quiniela, puede revisar los resultados. </h3>
+                    <button disabled> Revisar resultados de la quiniela</button>
+                </div>
+                <div class="item">
+                    <h3>Si no quiere rellenar la quiniela, puede continuar y revisar los resultados.</h3>
+                    <button> <a href="./resultados_masc.html"> Ver resultados sin quiniela rellenada de Primera División Masculina</a> </button>
                 </div>
             </div>
         </div>

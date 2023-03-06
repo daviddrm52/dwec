@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./../css/transcurso.css">
-    <link rel="shortcut icon" href="./../img/ISeeYou.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./../img/sports_soccer_FILL0_wght400_GRAD0_opsz48.png" type="image/x-icon">
     <title>Transcurso - Asosiación de Amigos del Futbol</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
             <li><a class="active" href="./transcurso.html"><b>Transcurso</b></a></li>
             <li><a href="./jornada.html"><b>Jornada</b></a></li>
             <li><a href="./contacto.html"><b>Contacto</b></a></li>
-            <form>
+            <form action="./buscar.html">
                 <input type="search" name="q" placeholder="Buscas algo..." />
                 <input type="submit" value="Buscar"/>
               </form>
@@ -30,28 +30,36 @@
                 <div>
                     <li><h3>Puede interesarte...</h3></li>
                 </div>
-                <li><a href="./jornada.html"><b>Jornadas activas</b></a></li>
-                <li><a href="./quiniela.html"><b>Quiniela de partidos</b></a></li>
-                <li><a href="./resultados.html"><b>Listado de puntos</b></a></li>
+                <li><a href="./notAvaliable.html"><b>Jornadas activas</b></a></li>
+                <li><a href="./notAvaliable.html"><b>Quiniela de partidos</b></a></li>
+                <li><a href="./notAvaliable.html"><b>Listado de puntos</b></a></li>
             </ul>
         </div>
         <div class="articulos">
             <div class="individual">
                 <h2> Transcurso de la temporada 2022-2023</h2>
-
                 <p>A continuación podrá ver las jornadas de la Primera División Masculina y Femenina</p>
-
                 <div>
                     <h3> Jornadas de Primera División Masculina </h3>
                     <h4> Equipos en la Primera División Masculina </h4>
-                    <div id="partidosMasculinos"></div>
+                    <table>
+                        <thead>
+                            <th>Nombre del equipo</th>
+                        </thead>
+                        <tbody id="partidosMasculinos"></tbody>
+                    </table>
                     <br> <a href="./jornadas_masc.html"> Generación de Jornadas de Primera División Masculina</a> <br>
                 </div>
                 <br>
                 <div>
                     <h3> Jornadas de Primera División Femenina </h3>
                     <h4> Equipos en la Primera División Femenina</h4>
-                    <div id="partidosFemeninos"></div>
+                    <table>
+                        <thead>
+                            <th>Nombre del equipo</th>
+                        </thead>
+                        <tbody id="partidosFemeninos"></tbody>
+                    </table>
                     <br><a href="./jornadas_fem.html"> Generación de Jornadas de Primera División Femenina</a>
                 </div>
                 <br>
