@@ -1,5 +1,10 @@
 let repetidorQuiniela = document.getElementById("partidosQuiniela");
 
+let valoresResultados = [0,1,2,3,4,5]
+
 for (let i = 0; i < 10; i++) {
-    repetidorQuiniela.innerHTML += '<tr> <td> '+(i+1)+' </td> <td>'+aleatorioMascLocal+' vs '+aleatorioMascVisitante+'</td> <td> 1<input type="radio" id="" name="quiniela-'+(i+1)+'" value="1"> X<input type="radio" id="" name="quiniela-'+(i+1)+'" value="x"> 2<input type="radio" id="" name="quiniela-'+(i+1)+'" value="2"> </td> <td> N/A </td> </tr>';
+    const numAleatorioLocal = valoresResultados[Math.floor(Math.random() * valoresResultados.length)];
+    const numAleatorioVisitante = valoresResultados[Math.floor(Math.random() * valoresResultados.length)];
+
+    repetidorQuiniela.innerHTML += '<tr> <td> '+(i+1)+' </td> <td>A vs B</td> <td> '+numAleatorioLocal+'-'+numAleatorioVisitante+' </td> </tr>';
 }

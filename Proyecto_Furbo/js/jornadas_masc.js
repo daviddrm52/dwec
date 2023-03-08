@@ -14,5 +14,17 @@ for (let i = 0; i < 10; i++) {
     console.log(arrayEnfrentamientos[i][i]);
     console.log(arrayEnfrentamientos[i][i+1]);*/
 
-    repetidorQuiniela.innerHTML += '<tr> <td> '+(i+1)+' </td> <td>'+aleatorioMascLocal+' vs '+aleatorioMascVisitante+'</td> <td> 1<input type="radio" id="" name="quiniela-'+(i+1)+'" value="1"> X<input type="radio" id="" name="quiniela-'+(i+1)+'" value="x"> 2<input type="radio" id="" name="quiniela-'+(i+1)+'" value="2"> </td> <td> N/A </td> </tr>';
+    repetidorQuiniela.innerHTML += '<tr> <td> '+(i+1)+' </td> <td>'+aleatorioMascLocal+' vs '+aleatorioMascVisitante+'</td> <td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="1"></td><td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="x"></td><td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="2"></td> <td id=quiniela-'+(i+1)+'> N/A </td> </tr>';
+}
+
+function verificarQuiniela() {
+    let valoresResultados = [0,1,2,3,4,5];
+
+    for (let i = 1; i <= 10; i++) {
+        const numAleatorioLocal = valoresResultados[Math.floor(Math.random() * valoresResultados.length)];
+        const numAleatorioVisitante = valoresResultados[Math.floor(Math.random() * valoresResultados.length)];
+
+        console.log('quiniela-'+i);
+        document.getElementById('quiniela-'+i).innerHTML = +numAleatorioLocal+' - '+numAleatorioVisitante;
+    }
 }
