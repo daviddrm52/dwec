@@ -8,7 +8,7 @@ for (let i = 0; i < 4; i++) {
     const aleatorioFemLocal = primeraFem[Math.floor(Math.random() * primeraFem.length)];
     const aleatorioFemVisitante = primeraFem[Math.floor(Math.random() * primeraFem.length)]
 
-    repetidorQuiniela.innerHTML += '<tr> <td> '+(i+1)+' </td> <td>'+aleatorioFemLocal+' vs '+aleatorioFemVisitante+'</td> <td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="1"></td><td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="x"></td><td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="2"></td> <td id=quiniela-'+(i+1)+'>  </td> </tr>';
+    repetidorQuiniela.innerHTML += '<tr> <td> '+(i+1)+' </td> <td>'+aleatorioFemLocal+' vs '+aleatorioFemVisitante+'</td> <td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="1"></td><td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="x"></td><td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="2"></td> <td id=quiniela-'+(i+1)+'> </td> </tr>';
 }
 
 function verificarQuiniela() {
@@ -20,5 +20,14 @@ function verificarQuiniela() {
 
         console.log('quiniela-'+i);
         document.getElementById('quiniela-'+i).innerHTML = +numAleatorioLocal+' - '+numAleatorioVisitante;
+        if(numAleatorioLocal > numAleatorioVisitante){
+            document.getElementById('quiniela-'+i).style.backgroundColor = "#339933";
+        } else if (numAleatorioLocal < numAleatorioVisitante){
+            document.getElementById('quiniela-'+i).style.backgroundColor = "#ff6666";
+        } else if (numAleatorioLocal == numAleatorioVisitante) {
+            document.getElementById('quiniela-'+i).style.backgroundColor = "#33ccff";
+        }
+
+        //console.log(document.querySelector('input[name="quiniela-'+(i+1)+'"]:checked').value);
     }
 }

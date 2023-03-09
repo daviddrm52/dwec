@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./../css/jornadas_fem.css">
+    <link rel="stylesheet" href="./../css/jornadas_masc.css">
     <link rel="shortcut icon" href="./../img/sports_soccer_FILL0_wght400_GRAD0_opsz48.png" type="image/x-icon">
-    <title>Jornadas Femeninas - Asosiación de Amigos del Futbol</title>
+    <title>Jornadas Masculinas - Asosiación de Amigos del Futbol</title>
 </head>
 <body>
     <header>
@@ -30,9 +30,8 @@
                 <div>
                     <li><h3>Puede interesarte...</h3></li>
                 </div>
-                <li><a href="./jornada.html"><b>Jornadas activas</b></a></li>
-                <li><a href="./quiniela.html"><b>Quiniela de partidos</b></a></li>
-                <li><a href="./resultados.html"><b>Listado de puntos</b></a></li>
+                <li><a href="./jornadas_masc.html"><b>Jornadas Masculinas</b></a></li>
+                <li><a href="./jornadas_fem.html"><b>Jornadas Femeninas</b></a></li>
             </ul>
         </div>
         <div class="articulos">
@@ -51,17 +50,29 @@
                     <tbody id="partidosQuiniela"></tbody>
                 </table>
                 <div class="item">
+                    <h3>¿Como funciona?</h3>
+                    <p class="item">
+                        En caso de que gane el equipo local, <span style="background-color: #339933;">Saldra en Verde</span>
+                    </p>
+                    <p class="item">
+                        En caso de que ocurra un empate, <span style="background-color: #33ccff;">Saldra en Azul</span>
+                    </p>
+                    <p class="item">
+                        En caso de que gane el equipo visitante, <span style="background-color: #ff6666;">Saldra en Rojo</span>
+                    </p>
+                </div>
+                <div class="item">
                     <h3>Si ha terminado de rellenar la quiniela, puede revisar los resultados. </h3>
                     <button onclick="verificarQuiniela()"> Revisar resultados de la quiniela</button>
                 </div>
                 <div class="item">
                     <h3>Si no quiere rellenar la quiniela, puede continuar y revisar los resultados.</h3>
-                    <button> <a href="./resultados_masc.html"> Ver resultados sin quiniela rellenada de Primera División Masculina</a> </button>
+                    <button disabled><a> Ver resultados sin quiniela rellenada de Primera División Masculina</a></button>
                 </div>
             </div>
         </div>
     </main>
-    <script src="./../js/jornadas_fem.js"></script>
+    <script src="./../js/jornadas_masc.js"></script>
     <footer>
         <h3>Asosiación de Amigos de Futbol</h3>
         <p>En colaboración con <a href="https://www.airchiquin.com/foundation/">Air Chiquin Foundation</a> </p>
