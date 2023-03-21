@@ -1,4 +1,4 @@
-let primeraMasc = ["Almería", "Athletic Club", "Atlético de Madrid", "FC Barcelona", "Real Betis", "Cádiz", "Celta de Vigo", "Elche", "Espanyol", "Getafe", "Girona", "Real Mallorca", "Osasuna", "Rayo Vallecano", "Real Madrid", "Real Sociedad", "Sevilla", "Valencia", "Valladolid", "Villarreal"];
+primeraMasc = ["Almería", "Athletic Club", "Atlético de Madrid", "FC Barcelona", "Real Betis", "Cádiz", "Celta de Vigo", "Elche", "Espanyol", "Getafe", "Girona", "Real Mallorca", "Osasuna", "Rayo Vallecano", "Real Madrid", "Real Sociedad", "Sevilla", "Valencia", "Valladolid", "Villarreal"];
 
 var arrayEnfrentamientos = new Array(2);
 
@@ -29,3 +29,39 @@ function verificarQuiniela() {
         }
     }
 }
+
+function scheduleMatchDays(){
+    const numberOfMatchDays = this.primeraMasc.length - 1; //Num de jornadas
+    const numberOfMatchesPerDay = this.primeraMasc.length / 2; //Num de partidos por jornada
+
+    console.log(numberOfMatchDays);
+    console.log(numberOfMatchesPerDay);
+
+    for(let i = 0; i < numberOfMatchDays; i++){
+        const matchDay = [];
+        for (let j = 0; j < numberOfMatchesPerDay; j++){
+            let match = {local: 'local', visitante: 'visitante'};
+            matchDay.push(match);
+            console.log(match);
+        }
+        this.matchDaySchedule.push(matchDay);
+    };
+};
+
+function setAwayTeams(){
+    const teamNames = this.primeraMasc.map (team => team.name);
+    const maxAwayTeams = this.primeraMasc.length - 1;
+    let teamIndex = this.primeraMasc.length -1 -1;
+    this.matchDaySchedule.forEach(matchDay => {
+        matchDay.forEach(function (match, index) {
+            if (index === 0){
+                match.away = teamNames[maxAwayTeams];
+                match.away = teamNames[teamIndex];
+                -teamIndex;
+            };
+        });
+    });
+};
+
+//scheduleMatchDays();
+setAwayTeams();
