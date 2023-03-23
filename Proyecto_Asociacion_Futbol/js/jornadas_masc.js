@@ -8,7 +8,7 @@ for (let i = 0; i < 10; i++) {
     const aleatorioMascLocal = primeraMasc[Math.floor(Math.random() * primeraMasc.length)];
     const aleatorioMascVisitante = primeraMasc[Math.floor(Math.random() * primeraMasc.length)]
 
-    repetidorQuiniela.innerHTML += '<tr> <td> '+(i+1)+' </td> <td>'+aleatorioMascLocal+' vs '+aleatorioMascVisitante+'</td> <td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="1"></td><td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="x"></td><td><input type="radio" id="" name="quiniela-'+(i+1)+'" value="2"></td> <td id=quiniela-'+(i+1)+'> </td> </tr>';
+    repetidorQuiniela.innerHTML += '<tr> <td> '+(i+1)+' </td> <td>'+aleatorioMascLocal+' vs '+aleatorioMascVisitante+'</td> <td><input type="radio" id="1-quiniela-'+(i+1)+'" name="quiniela-'+(i+1)+'" value="1"></td><td><input type="radio" id="x-quiniela-'+(i+1)+'" name="quiniela-'+(i+1)+'" value="x"></td><td><input type="radio" id="2-quiniela-'+(i+1)+'" name="quiniela-'+(i+1)+'" value="2"></td> <td id=quiniela-'+(i+1)+'> </td> </tr>';
 }
 
 function verificarQuiniela() {
@@ -27,10 +27,17 @@ function verificarQuiniela() {
         } else if (numAleatorioLocal == numAleatorioVisitante) {
             document.getElementById('quiniela-'+i).style.backgroundColor = "#33ccff";
         }
+
+        document.getElementById('1-quiniela-'+i).disabled = true;
+        document.getElementById('x-quiniela-'+i).disabled = true;
+        document.getElementById('2-quiniela-'+i).disabled = true;
     }
+
+
+    document.querySelector("#btnVerificar").disabled = true;
 }
 
-function scheduleMatchDays(){
+/*function scheduleMatchDays(){
     const numberOfMatchDays = this.primeraMasc.length - 1; //Num de jornadas
     const numberOfMatchesPerDay = this.primeraMasc.length / 2; //Num de partidos por jornada
 
@@ -64,4 +71,4 @@ function setAwayTeams(){
 };
 
 //scheduleMatchDays();
-setAwayTeams();
+setAwayTeams();*/
