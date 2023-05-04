@@ -1,5 +1,24 @@
-primeraMasc = ["Almería", "Athletic Club", "Atlético de Madrid", "FC Barcelona", "Real Betis", "Cádiz", "Celta de Vigo", "Elche", "Espanyol", "Getafe", "Girona", "Real Mallorca", "Osasuna", "Rayo Vallecano", "Real Madrid", "Real Sociedad", "Sevilla", "Valencia", "Valladolid", "Villarreal"];
+function Partido(local,visitante) {
+  this.local = local;
+  this.visitante=visitante;
+  this.resultado=null;
+}
 
+var equipos = new Array ("Almería", "Athletic Club", "Atlético de Madrid", "FC Barcelona", "Real Betis", "Cádiz", "Celta de Vigo", "Elche", "Espanyol", "Getafe", "Girona", "Real Mallorca", "Osasuna", "Rayo Vallecano", "Real Madrid", "Real Sociedad", "Sevilla", "Valencia", "Valladolid", "Villarreal");
+
+https://github.com/JJ/curso-js/blob/master/txt/1-oo.md
+
+var midsize = equipos.length/2;
+var quiniela = new Array(midsize);
+for (let k = 0; k < midsize; k++){
+  var equipo1 = equipos.splice(Math.floor( equipos.length*Math.random()) , 1);
+  var equipo2 = equipos.splice(Math.floor( equipos.length*Math.random()), 1);
+  quiniela[k] = new Partido( equipo1, equipo2 );
+ }
+
+for ( k in quiniela ) {
+  console.log( "Partido " + (parseInt(k)+1)+": " + quiniela[k].local + " - " + quiniela[k].visitante);
+}
 var arrayEnfrentamientos = new Array(2);
 
 let repetidorQuiniela = document.getElementById("partidosQuiniela");
